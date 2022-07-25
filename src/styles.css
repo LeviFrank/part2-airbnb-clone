@@ -98,6 +98,9 @@ body {
   align-items: center;
   font-family: 'Inter', sans-serif;
   background-color: whitesmoke;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .contacts {
