@@ -4,24 +4,34 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Card from "./components/Card.jsx";
 import Footer from "./components/Footer.jsx";
-import zarefesPic from "./images/zaferesPic.png";
+import data from "./data.js";
+
 
 function App () {
-  return (
-    <div className="App">
-        <Navbar/>
-        <Hero/>
-        <Card
-            image={zarefesPic}
-            rating="5.0"
-            reviewCount="(6)"
-            country="United States"
-            title="Life lessons with Katie Zaferes"
-            price="$136 / person"
-        />
-        <Footer/>
-    </div>
-  )
+    const cards = data.map(item => {
+        return (
+            <Card 
+                key={item.id}
+                coverImg={item.coverImg}
+                rating={item.stats.rating}
+                reviewCount={item.stats.reviewCount}
+                location={item.location}
+                title={item.title}
+                price={item.price}
+            />
+        )
+    })  
+        
+        return (
+            <div>
+                <Navbar/>
+                <Hero/>
+                <section className="cardsList">
+                    {cards}
+                </section>
+                <Footer/>
+            </div>
+    )
 }
 
 export default App;

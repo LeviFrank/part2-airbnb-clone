@@ -1,7 +1,7 @@
 import React from "react";
 import adventurePics from "../images/adventurePics.png";
 
-function Hero() {
+function Hero(props) {
     return (
         <section className="Hero">
             <img src={adventurePics} className="adventurePics"/>

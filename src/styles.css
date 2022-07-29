@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
+  background-color: aquamarine;
 }
 
 body {
   margin: 0;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
 .airbnbLogo {
@@ -31,6 +33,13 @@ body {
   flex-direction: column;
 }
 
+.cardsList {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .adventurePics {
   display: flex;
   margin-left: auto;
@@ -52,19 +61,39 @@ body {
 }
 
 .card {
-    margin-top: 50px;
-    margin-left: 30px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  margin-top: 5px;
+  margin-left: 30px;
 }
 
-.zaferesPic {
+.cardTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardImages {
     display: flex;
     margin-top: 50px;
+    height: 260px;
+    width: 176px;
+    border-radius: 9px;
 }
 
-.cardAbout {
-    margin-top: 17px;
+.cardStats {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;   
+}
+
+.star {
+  padding-right: 7px;
 }
 
 .footer {
-    margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  margin-left: 30px;
 }

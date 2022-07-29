@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer className="footer">
             <br></br><br></br><br></br>
-            Copyright Development @KlondikeCoding™
+            Copyright Development @CodeForKlondike™
         </footer>
     )
 }
