@@ -3,25 +3,27 @@ import React from "react";
 
 function Card(props) {
     let soldText
-    if (props.openSpots === 0) {
-        soldText = "SOLD OUT"
-    } else if (props.location === "Online") {
-        soldText = "ONLINE"
+    if (props.item.openSpots === 0) {
+        soldText = "SOLD OUT 😥"
+    } else if (props.item.location === "Online") {
+        soldText = "ONLINE 💻"
     }
-    // SOLD OUT 😥
+
     return (
         <div className="card">
             {soldText &&
             <div className="soldOutTag">{soldText}</div>}
-               <img src={props.coverImg} className="cardImages"/>
+               <img src={props.item.coverImg} className="cardImages"/>
             <div className="cardStats">
-                <img src={star} className="star"/>
-                <span>{props.rating}</span>
-                <span className="gray">{props.reviewCount} • </span>
-                <span className="gray">{props.location}</span>
+                <div className="rating">
+                    <img src={star} className="star"/>
+                    <span>{props.item.stats.rating}</span>
+                </div>
+                <span className="reviewCount">({props.item.stats.reviewCount}) • </span>
+                <span className="location">{props.item.location}</span>
             </div>
-            <p className="cardTitle">{props.title}</p>
-            <p><span className="bold">From ${props.price} </span> 
+            <p className="cardTitle">{props.item.title}</p>
+            <p><span className="bold">From ${props.item.price} </span> 
             / person</p></div>
     )
 }

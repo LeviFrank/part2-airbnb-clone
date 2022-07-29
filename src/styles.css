@@ -93,6 +93,11 @@ body {
   align-items: center;   
 }
 
+.rating {
+  margin-bottom: 4px;
+  margin-right: 3px;
+}
+
 .soldOutTag {
   position: absolute;
   top: 60px;
