@@ -1,31 +1,25 @@
-import React from 'react';
-import './styles.css';
-import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
+import React from "react";
+import "../styles.css";
+import data from "../data.js";
 import Card from "./components/Card.jsx";
-import Footer from "./components/Footer.jsx";
-import data from "./data.js";
+import Header from "./components/Header.jsx";
 
 
 function App () {
     const cards = data.map(item => {
         return (
-            <Card 
+            <Card
                 key={item.id}
-                item={item}
+                {...item}
             />
         )
     })  
         
-        return (
-            <div>
-                <Navbar/>
-                <Hero/>
-                <section className="cardsList">
-                    {cards}
-                </section>
-                <Footer/>
-            </div>
+    return (
+        <div>
+            <Header/>
+            {cards}
+        </div>
     )
 }
 

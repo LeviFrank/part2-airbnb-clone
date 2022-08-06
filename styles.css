@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: aquamarine;
+}
+
+.title {
+    text-align: center;
+    background-color: red;
+    height: 50px;
+}
