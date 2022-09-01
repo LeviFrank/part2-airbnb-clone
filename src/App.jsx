@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles.css";
-import data from "../data.js";
+import "./styles.css";
+import data from "./data.js";
 import Card from "./components/Card.jsx";
-import Header from "./components/Header.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 
 function App () {
@@ -17,7 +17,7 @@ function App () {
         
     return (
         <div>
-            <Header/>
+            <Navbar/>
             {cards}
         </div>
     )

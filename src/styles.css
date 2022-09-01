@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgba(35, 35, 35);
+}
+
+.nav {
+    display: flex;
+    padding: 13px 0px 13px 0px;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    background-color: rgba(50, 50, 50);
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.9);
+    width: 1240px;
+}
+
+nav > h2 {
+    margin-left: 9px;
+}
+
+body {
+    margin: 0;
+}
+
+.world {
+    height: 50px;
+}
+
+.mainTitle {
+    color: rgba(50, 200, 255);
+}
+
+.placeImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 230px;
+    border-radius: 11px;
+    margin-left: 50px;
+}
+
+.placeImage > h4 {
+    margin-left: 9px;
+}
+
+.location {
+    color: rgba(50, 200, 255);
+    margin-left: 50px;
+}
+
+.googleMapsUrl {
+    margin-left: 50px;
+    color: rgba(50, 200, 255);
+}
+
+.title {
+    margin-left: 50px;
+    color: rgba(210, 110, 40);
+}
+
+.mapsMarker {
+    height: 100px;
+}
+
+.dates {
+    color: rgba(50, 200, 255);
+    margin-left: 50px;
+}
+
+.description {
+    color: rgba(50, 200, 255);
+    margin-left: 50px;
+}
+
+.cardLine {
+    background-color: rgba(65, 65, 65);
+    border: none;
+    height: 1px;
+    width: 950px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
